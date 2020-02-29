@@ -76,12 +76,14 @@ a {
 
 h1,
 h2,
-h3 {
+h3
+{
     font-family: 'Fredericka the Great', sans-serif;
     font-weight: normal;
     text-transform: uppercase;
     color: #FCFCFC;
 }
+
 
 h1 {
     font-size: 120px;
@@ -114,13 +116,18 @@ h2 {
 }
 
 h3 {
-    font-size: 49px;
+    font-size: 35px;
     /* color: #152D20; */
 }
 
 h4{
+    font-size: 35px;
+    text-transform: uppercase;
     text-align: center;
+    padding: 4% 4%;
 }
+
+
 
 .read-more,
 input[type=submit] {
@@ -184,6 +191,7 @@ main {
     margin-top: 80px;
 }
 
+
 main p {
     padding-top: 10px;
     clear:both;
@@ -207,13 +215,15 @@ section{
 }
 
 .gallery h2 {
+    color: #152d20;
     width: 100%;
-    padding: 8vh 27%; 
+    padding: 7% 27% 0; 
     text-align: center;
 }
+
 .gallery-images {
     clear: both;
-    padding-bottom:8vh;
+    padding: 7% 0;
 }
 .gallery-images img {
     width: 100%;
@@ -237,21 +247,57 @@ aside{
 .additional-info li {
     width: calc(100% / 3);
     float: left;
-    padding: 50px;
-    
+    /* padding: 50px; */   
 }
 
-
-
-
-
+.aside-icons {
+    padding: 6% 10% 4%;
+}
 
 
 
 article {
     background-color: #FCFCFC;
-    border: 2px solid black;
 }
+
+.article h3 {
+    color: #152d20;
+    text-align: left;
+}
+
+article div {
+    width: 50%;
+    height: 54%;
+    display:block;
+    float: left;
+}
+
+.article-img{
+    background-color: #555;
+}
+
+.article-text {
+    padding: 7%;
+}
+
+article p {
+    padding: 3% 0;
+}
+
+article a {
+    color: #FCFCFC;
+    background-color:  #152d20;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 12px 20px;
+}
+
+.article-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 footer{
     color:white;
     background-color: #152D20;
