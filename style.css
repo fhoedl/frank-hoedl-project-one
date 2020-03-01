@@ -59,6 +59,7 @@ body {
     margin: 0 auto;
     max-width: 1280;
     width: 90%;
+    /* border: 2px solid greenyellow; */
 }
 
 ul {
@@ -254,36 +255,27 @@ aside{
     padding: 6% 10% 4%;
 }
 
-
-
+/*  */
 article {
     background-color: #FCFCFC;
 }
-
 .article h3 {
     color: #152d20;
     text-align: left;
 }
-
-article div {
+.article-text,
+.article-img {
     width: 50%;
     height: 54%;
     display:block;
     float: left;
 }
-
-.article-img{
-    background-color: #555;
-}
-
 .article-text {
-    padding: 7%;
+    padding: 11% 3%;
 }
-
 article p {
-    padding: 3% 0;
+    padding: 3% 0 5% 0;
 }
-
 article a {
     color: #FCFCFC;
     background-color:  #152d20;
@@ -291,16 +283,28 @@ article a {
     text-transform: uppercase;
     padding: 12px 20px;
 }
-
 .article-img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
+/*  */
 footer{
     color:white;
     background-color: #152D20;
+    
+}
+
+.footer-elements{
+    width: 100%;
+}
+
+footer nav,
+footer form,
+footer address {
+    float:left;
+    width: calc(100% /3);
 }
 
 
