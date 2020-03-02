@@ -53,6 +53,8 @@ body {
     /* font-family: 'Fredericka the Great', sans-serif; */
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
@@ -73,6 +75,7 @@ li {
 
 a {
     text-decoration: none;
+    color: #FCFCFC;
 }
 
 h1,
@@ -85,15 +88,35 @@ h3
     color: #FCFCFC;
 }
 
-
 h1 {
     font-size: 120px;
     line-Height: 117px;
     width: 100%;
     padding-top: 15vh;
     padding-left: 19vw;
-    padding-bottom: 10vh;
+    /* padding-bottom: 10vh; */
     text-align: right;
+}
+
+h2 {
+    font-size: 51px;
+    float:left;
+}
+
+h3 {
+    font-size: 35px;
+    color: #152d20;
+}
+
+h4{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+p,
+address{
+    font-size: 22px;
+    line-height: 29px;
 }
 
 .fab,
@@ -110,46 +133,31 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    font-size: 51px;
-    /* padding-top: 40px; */
-    float:left;
-}
-
-h3 {
-    font-size: 35px;
-    /* color: #152D20; */
-}
-
-h4{
-    font-size: 35px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 4% 4%;
-}
-
-
-
-.read-more,
-input[type=submit] {
-    /* clear styling?? */
+main a,
+article a,
+input{
+    display: inline-block;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     font-size: 18px;
-    line-height: 29px;
+    line-height: 27px;
     text-transform: uppercase;
-    color: #152D20;
-    background-color:  #FCFCFC;
+    padding: 6px 20px;
 }
-
-article button,
+input{
+    display:block;
+    float:left;
+    border: none;
+}
+input:first-child {
+    width: 68%;
+    text-transform: lowercase;
+}
 input[type=submit] {
     color: #FCFCFC;
-    background-color:  #152D20;
-}
-
-input[type=submit] {
     background-color: #000000;
+    width: 32%;
+    padding: 6px 0px
 }
 
 header {
@@ -166,21 +174,17 @@ header {
 main {
     color:white;
     background-color: #152D20;
-    /* clear:both; */
+
 }
 
 .main-image{
     background-color: rgb(0, 123, 125);
-    /* height: 25vw; */
     width: 25%;
     margin: 80px 0;
-    /* margin-left: 5%; */
     float:left;
-    /* margin-right: 20%; */
 }
 
 .main-image img{
-    /* height: 100%; */
     width: 100%;
     object-fit: cover;
 }
@@ -192,11 +196,8 @@ main {
     margin-top: 80px;
 }
 
-
 main p {
-    padding-top: 10px;
     clear:both;
-    line-height: 25px;
 }
 
 .social {
@@ -205,9 +206,10 @@ main p {
     right: 40px
 }
 
-main button {
+main a {
+    color: #152D20;
+    background-color:  #FCFCFC;
     margin-top: 20px;
-    /* clear:left; */
 }
 
 section{
@@ -248,7 +250,7 @@ aside{
 .additional-info li {
     width: calc(100% / 3);
     float: left;
-    /* padding: 50px; */   
+    text-align:center;
 }
 
 .aside-icons {
@@ -259,69 +261,127 @@ aside{
 article {
     background-color: #FCFCFC;
 }
-.article h3 {
-    color: #152d20;
-    text-align: left;
-}
+
 .article-text,
 .article-img {
     width: 50%;
-    height: 54%;
-    display:block;
+    height: 480px;
+    display: block;
     float: left;
 }
-.article-text {
-    padding: 11% 3%;
+
+.article-img-1 {
+    float: right;
 }
+
+.article-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 40% 70%;
+}
+
 article p {
-    padding: 3% 0 5% 0;
+    padding: 2% 0;
+
 }
+
 article a {
     color: #FCFCFC;
     background-color:  #152d20;
     display: inline-block;
     text-transform: uppercase;
-    padding: 12px 20px;
 }
-.article-img img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+
+div .article-text {
+    position: relative;
+}
+
+.article-link-1,
+.article-link-2 {
+    margin-top: 20px;
+}
+
+.title-text {
+    max-width: 550px;
+    position: absolute;
+    top: 15%;
+}
+
+.title-text-1 {
+    margin-left:10%;
+    right: 10%;
+}
+
+.title-text-2 {
+    margin-left:40px;
+    margin-right: 10%;
+
 }
 
 /*  */
 footer{
+    float:left;
+    width:100%;
     color:white;
     background-color: #152D20;
-    
 }
 
 .footer-elements{
     width: 100%;
+    padding: 5% 0;
 }
 
 footer nav,
-footer form,
-footer address {
+footer .updates,
+footer .contact {
     float:left;
-    width: calc(100% /3);
 }
 
+footer nav{
+    width: 26%;
+}
+footer nav li{
+    padding: 1% 0;
+    text-transform: uppercase;
+}
+footer nav li:nth-child(1) {
+    padding-top: 0;
+}
 
+footer .updates {
+    width: 48%;
+    text-align: center;
+}
 
+footer .updates p{
+    padding: 1% 0 2% 0;
+}
 
+footer .updates p::first-letter {
+    text-transform: capitalize;
+}
 
+footer .contact{
+    width: 26%;
+    text-align: right;
+}
 
+footer address {
+    padding-top: 2%;
+}
 
-
+.copyright p{
+    text-align: center;
+    padding: 5px 0 10px 0;
+    background-color: #000000;
+}
 
 
 
 
 /* NAVIGATION STYLING */
 /* ...HIDE Mobile Menu... */
-
-
 .mobile-menu{
     display:none;
     text-transform: capitalize;
